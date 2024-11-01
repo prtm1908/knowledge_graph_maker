@@ -1,5 +1,6 @@
 from .types import Ontology, LLMClient, Edge, Document
 from .llm_clients.groq_client import GroqClient
+from .llm_clients.ollama_client import OllamaClient
 from pydantic import ValidationError
 import json
 import re
@@ -35,8 +36,8 @@ class GraphMaker:
     def __init__(
         self,
         ontology: Ontology = default_ontology,
-        llm_client: LLMClient = GroqClient(
-            model="mixtral-8x7b-32768", temperature=0.2, top_p=1
+        llm_client: LLMClient = OllamaClient(
+            model="llama3.2:latest", temperature=0.2, top_p=1
         ),
         verbose: bool = False,
     ):
