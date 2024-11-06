@@ -64,9 +64,9 @@ class GraphMaker:
             "Format your output as a json with the following schema. \n"
             "[\n"
             "   {\n"
-            '       node_1: Required, an entity object with attributes: {"label": "as per the ontology", "name": "Name of the entity"},\n'
-            '       node_2: Required, an entity object with attributes: {"label": "as per the ontology", "name": "Name of the entity"},\n'
-            "       relationship: Describe the relationship between node_1 and node_2 as per the context, in a few sentences.\n"
+            '       "node_1": "Required, an entity object with attributes: {"label": "as per the ontology", "name": "Name of the entity"}",\n'
+            '       "node_2": "Required, an entity object with attributes: {"label": "as per the ontology", "name": "Name of the entity"}",\n'
+            "       'relationship': 'Describe the relationship between node_1 and node_2 as per the context, in a few sentences.'\n"
             "   },\n"
             "]\n"
             "Do not add any other comment before or after the json. Respond ONLY with a well formed json that can be directly read by a program."

@@ -8,7 +8,7 @@ class OllamaClient(LLMClient):
     _temperature: float
     _top_p: float
 
-    def __init__(self, model: str = "llama3:8b", temperature=0.2, top_p=1,  url: str = "http://localhost:11434"):
+    def __init__(self, model: str = "llama3:8b", temperature=0.2, top_p=1,  url: str = "https://iris.aihello.com/ollama"):
         self._model = model
         self._temperature = temperature
         self._top_p = top_p
